@@ -15,6 +15,14 @@ public class TopicoServiceTest extends BaseTest {
 
     private Topico topico;
 
+
+/*  given().
+        params("firstName", "John", "lastName", "Doe").
+    when().
+        post("/greetMe").
+    then().
+        body(hasXPath("/greeting/firstName[text()='John']"));*/
+
     @Test
     public void deveRetornarTodosTopicos() {
         //Arrange
