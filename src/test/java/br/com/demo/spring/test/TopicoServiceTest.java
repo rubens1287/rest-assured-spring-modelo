@@ -12,10 +12,7 @@ import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.equalToIgnoringCase;
 
 public class TopicoServiceTest extends BaseTest {
-
-    private Topico topico;
-
-
+    
 /*  given().
         params("firstName", "John", "lastName", "Doe").
     when().
