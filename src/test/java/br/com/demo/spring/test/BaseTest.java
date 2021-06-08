@@ -5,19 +5,16 @@ import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
+import lombok.Getter;
+import lombok.Setter;
+import org.junit.After;
 import org.junit.Before;
+import org.junit.Test;
 
+@Getter @Setter
 public class BaseTest {
 
     private RequestSpecification spec;
-
-    public RequestSpecification getSpec() {
-        return spec;
-    }
-
-    public void setSpec(RequestSpecification spec) {
-        this.spec = spec;
-    }
 
     @Before
     public void SetUp() {
@@ -31,4 +28,6 @@ public class BaseTest {
                 .addFilter(new ResponseLoggingFilter())
                 .build();
     }
+
+
 }

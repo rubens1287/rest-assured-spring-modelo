@@ -33,6 +33,7 @@ public class TopicoServiceTest extends BaseTest {
         response.then()
                 .contentType("application/json")
                 .statusCode(200);
+
         assertThat(response.getBody().asString(), matchesJsonSchemaInClasspath("Topico-All-Schema.json"));
     }
 
